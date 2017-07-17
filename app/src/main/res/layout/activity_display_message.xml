@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.k17.DisplayMessageActivity"
+    android:id="@+id/content"
+
+    android:weightSum="1">
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/kurukkuruk"
+    android:adjustViewBounds="true"
+    android:layout_margin="16dp"
+    android:scaleType="fitCenter"
+    android:id="@+id/img"
+    />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Welcome to K'17"
+    android:textSize="36sp"
+    android:layout_below="@id/img"
+    android:layout_margin="8dp"
+    android:textAlignment="center"
+    android:id="@+id/text"
+    android:textColor="#BF360C"
+    />
+    <ImageButton
+        android:id="@+id/takeph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+
+
+        android:tint="#F44336"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+         />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image1"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/text"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_below="@id/text"
+        android:layout_toRightOf="@id/image1"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+
+        android:layout_above="@id/takeph"
+        android:fontFamily="sans-serif"
+        android:text="Click the K! logo to know more............"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:lines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:textColor="#9C27B0"
+        android:singleLine="true"
+
+        />
+
+
+
+</RelativeLayout>
